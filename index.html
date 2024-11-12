@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar with image and basic styling -->
+    <img class="image" src="https://media.istockphoto.com/id/639619730/photo/crazy-mathematician.jpg?s=612x612&w=0&k=20&c=RLDqBh3tW0Sm9_dV0iB96imKQo03HhwHUrdmFfKTI7A=">
+    <div class="mynav">
+        <nav class="navbar">
+            <div class="container">
+                <div class="menu">
+                    <a href="https://www.google.com/" class="nav-link">Home</a>
+                    <a href="#" class="nav-link">About Us</a>
+                    <a href="#" class="nav-link">Delete All</a>
+                </div>
+                <form class="search-form" role="search">
+                    <input type="search" class="search-input" placeholder="Search" aria-label="Search">
+                    <button type="submit" class="search-button">Search</button>
+                </form>
+            </div>
+        </nav>
+    </div>
+
+    <!-- Button to add a new task -->
+    <div class="padding">
+        <button id="addTaskButton">Add Task</button>
+    </div>
+
+    <!-- Form to input task details -->
+    <div id="form-container" class="form-container" style="display: none;">
+        <form id="task-form">
+            <label for="task">Task:</label>
+            <input type="text" id="task" name="task" required>
+            <button type="submit" class="submit-button">Add Task</button>
+        </form>
+    </div>
+
+    <!-- List to display tasks -->
+    <div id="task-list" class="task-list"></div>
+
+    <script src="query.js"></script>
+</body>
+</html>
